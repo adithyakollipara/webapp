@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  adithya-ui-code: # name of app change it 
+    image: adithya-web:appv$BUILD_NUMBER
+    build:
+      context: . # location of dockerfile 
+      dockerfile: Dockerfile # name of dockerfile 
+    container_name: adithya-web-c1 
+    ports:
+      - 1432:80 # left side port b/w 1024 - 5000 
