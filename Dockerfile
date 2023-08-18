@@ -1,4 +1,5 @@
 FROM nginx
 LABEL name="adithya"
 COPY index.html /usr/share/nginx/html/
-EXPOSE 80
+COPY health.html /usr/share/nginx/html/
+EXPOSE 80   
